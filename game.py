@@ -3,8 +3,8 @@ import random
 secret_number = random.randint(1, 100)
 attempts = 0
 
-print("🎮 Guess the Number!")
-print("I'm thinking of a number between 1 and 100.")
+print("Guess the Number")
+print("I'm thinking of a numberbetween 1and100.")
 
 while True:
     try:
@@ -12,11 +12,11 @@ while True:
         attempts += 1
 
         if guess < secret_number:
-            print("📈 Too low!")
+            print(" low ")
         elif guess > secret_number:
-            print("📉 Too high!")
+            print(" hight ")
         else:
-            print(f"🎉 Correct! You got it in {attempts} attempts.")
+            print(f"Correct! You got it in {attempts} attempts")
             break
 
     except ValueError:
